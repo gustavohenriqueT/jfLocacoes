@@ -448,3 +448,91 @@ footer { padding: 60px 5% 20px; background-color: var(--bg-card); border-top: 1p
     .fleet-thumbs { flex-direction: column; }
     .thumb-item { width: 100%; }
 }
+
+/* RESPONSIVIDADE PARA CELULARES E TABLETS */
+@media (max-width: 768px) {
+    /* 1. Navbar e Menu */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    /* 2. Seção Hero (Início) */
+    .hero {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 3. Grid de Serviços */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 4. Seção da Frota e Abas */
+    .fleet-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .fleet-tabs {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .fleet-main-image {
+        height: 250px;
+    }
+
+    .fleet-thumbs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .thumb-item {
+        min-width: 100px;
+        height: 70px;
+    }
+
+    /* 5. Seção Sobre / Processo */
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    /* 6. Seção de Contato */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
