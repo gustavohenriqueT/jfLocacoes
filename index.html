@@ -3,284 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JF Locações e Transportes</title>
-    <link rel="stylesheet" href="css/style.css?v=2">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <meta name="description" content="JF Locações e Transportes — locação de caminhões, transporte de cargas e soluções logísticas.">
+    <meta name="theme-color" content="#202020">
+    <title>JF Locações e Transportes | Caminhões e Logística</title>
+    <link rel="stylesheet" href="css/style.css?v=6">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO / MENU -->
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-icon">JF</span>
-            <span class="logo-text">LOCAÇÕES E TRANSPORTES</span>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#frota">Frota</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <a href="#contato" class="btn btn-primary">FALAR COM VENDAS</a>
-    </header>
+<!-- [CABEÇALHO] Área do logótipo e menu de navegação -->
+<header class="navbar" id="topo">
+    <a class="logo" href="#inicio" aria-label="JF Locações e Transportes - início">
+        <img class="logo-img" src="assets/logo-jf.png" alt="JF">
+        <span class="logo-text">LOCAÇÕES <b>&</b> TRANSPORTES</span>
+    </a>
 
-    <!-- SEÇÃO INÍCIO (HERO) -->
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav id="menu-principal">
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#frota">Frota</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <a href="#contato" class="btn btn-outline nav-cta">SOLICITAR ORÇAMENTO</a>
+</header>
+
+<main>
+    <!-- [HERO] Secção inicial -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="badge">LOCAÇÃO - TRANSPORTE - LOGÍSTICA</div>
-            <h1>MOVA O<br><span class="text-blue">BRASIL</span><br>COM A GENTE.</h1>
-            <p>Desde 2006 operando com frota de 850+ veículos, cobertura nacional e suporte 24 horas. Locação ou transporte, a JF entrega onde você precisa.</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-element">
+            <span class="badge">Locação, transporte e logística</span>
+            <h1>SUA OPERAÇÃO<br><span class="text-accent">NÃO PODE PARAR.</span></h1>
+            <p>Locação de caminhões e soluções em transporte para empresas que precisam de segurança, agilidade e uma operação preparada para a estrada.</p>
             <div class="hero-actions">
                 <a href="#contato" class="btn btn-primary">SOLICITAR ORÇAMENTO</a>
-                <a href="#servicos" class="btn btn-outline">CONHECER SERVIÇOS</a>
+                <a href="#frota" class="btn btn-outline">CONHECER A FROTA</a>
             </div>
-        </div>
-        <!-- Imagem de fundo ilustrativa aplicada via CSS ou container -->
-    </section>
-
-    <!-- FAIXA DE DESTAQUE -->
-    <div class="banner-highlight">
-        <h2>Desde 2006</h2>
-        <p>trabalhando com excelência</p>
-    </div>
-
-    <!-- SEÇÃO SERVIÇOS -->
-    <section id="servicos" class="services">
-        <div class="section-header">
-            <span class="section-subtitle">O QUE OFERECEMOS</span>
-            <h2>SOLUÇÕES COMPLETAS<br><span class="text-blue">EM TRANSPORTE</span></h2>
+            <div class="hero-trust">
+                <span>✓ Atendimento comercial</span>
+                <span>✓ Soluções para diferentes operações</span>
+                <span>✓ Desde 2006</span>
+            </div>
         </div>
         
-        <div class="services-grid">
-            <div class="card">
-                <div class="card-icon">🚚</div>
-                <h3>Locação de Caminhões</h3>
-                <p>Frota variada com caminhões leves, médios e pesados disponíveis por diária, semana ou contrato mensal. Manutenção inclusa.</p>
-                <div class="tags">
-                    <span>Toco</span> <span>Truck</span> <span>Carreta</span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-icon">📦</div>
-                <h3>Transporte de Cargas</h3>
-                <p>Soluções completas para transporte de cargas fracionadas e fechadas, com rastreamento em tempo real em todo o território nacional.</p>
-                <div class="tags">
-                    <span>Fracionado</span> <span>Lotação</span> <span>Nacional</span>
-                </div>
+        <div class="hero-truck-track">
+            <i class="fa-solid fa-truck-moving"></i>
+        </div>
+    </section>
+
+    <!-- [ESTATÍSTICAS] -->
+    <section class="stats fade-element" aria-label="Destaques da JF">
+        <div class="stat">
+            <strong>+20</strong>
+            <span>anos de experiência*</span>
+        </div>
+        <div class="stat">
+            <strong>3+</strong>
+            <span>categorias de veículos</span>
+        </div>
+        <div class="stat">
+            <strong>Brasil</strong>
+            <span>soluções logísticas*</span>
+        </div>
+    </section>
+
+    <!-- [SERVIÇOS] -->
+    <section id="servicos" class="section services">
+        <div class="section-header fade-element">
+            <span class="section-subtitle">O que oferecemos</span>
+            <h2>TRANSPORTE E <span class="text-accent">LOCAÇÃO</span><br>PARA SUA OPERAÇÃO</h2>
+            <p>Escolha a solução que melhor atende à sua necessidade e fale com nossa equipe para receber uma proposta.</p>
+        </div>
+
+        <div class="services-list">
+            <article class="service">
+                <div class="service-head"><div class="card-icon"><i class="fa-solid fa-truck-fast"></i></div><span class="card-kicker">Locação</span><h3>Locação de Caminhões</h3></div>
+                <p>Frota para diferentes necessidades de operação, com opções de veículos leves, médios e pesados.</p>
+                <div class="service-side"><div class="tags"><span>Toco</span><span>Pipa</span><span>Baú</span><span>Sider</span></div><a href="#contato" class="card-link" data-service="Locação de Caminhões">Tenho interesse <span>→</span></a></div>
+            </article>
+            <article class="service">
+                <div class="service-head"><div class="card-icon"><i class="fa-solid fa-box-open"></i></div><span class="card-kicker">Transporte</span><h3>Transporte de Cargas</h3></div>
+                <p>Soluções para cargas fracionadas e fechadas, de acordo com o perfil e a rota da sua operação.</p>
+                <div class="service-side"><div class="tags"><span>Fracionado</span><span>Lotação</span><span>Nacional</span></div><a href="#contato" class="card-link" data-service="Transporte de Cargas">Tenho interesse <span>→</span></a></div>
+            </article>
+            <article class="service">
+                <div class="service-head"><div class="card-icon"><i class="fa-solid fa-route"></i></div><span class="card-kicker">Logística</span><h3>Soluções Logísticas</h3></div>
+                <p>Atendimento pensado para empresas que precisam organizar transporte, veículos e operação.</p>
+                <div class="service-side"><div class="tags"><span>Operação</span><span>Distribuição</span><span>Cargas</span></div><a href="#contato" class="card-link" data-service="Soluções Logísticas">Tenho interesse <span>→</span></a></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- [DIFERENCIAIS] -->
+    <section id="diferenciais" class="section differentiators">
+        <div class="diff-layout">
+            <div class="diff-photo" role="img" aria-label="Caminhão Sider da frota JF"></div>
+            <div class="diff-text">
+                <div class="section-header fade-element">
+            <span class="section-subtitle">Por que a JF</span>
+            <h2>UMA PARCEIRA PARA<br><span class="text-accent">SUA OPERAÇÃO</span></h2>
+        </div>
+                <div class="difference-grid">
+            <article class="difference"><h3>Frota diversificada</h3><p>Opções de veículos para diferentes tipos de carga e operação.</p></article>
+            <article class="difference"><h3>Atendimento próximo</h3><p>Contato direto para entender a necessidade e encaminhar a solução.</p></article>
+            <article class="difference"><h3>Experiência</h3><p>Atuação no segmento desde 2006, conforme as informações atuais da empresa.</p></article>
+            <article class="difference"><h3>Agilidade</h3><p>Um processo simples para solicitar orçamento e avançar com a contratação.</p></article>
+        </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO FROTA -->
-    <section id="frota" class="fleet">
-        <div class="fleet-header">
+    <!-- [FROTA] -->
+    <section id="frota" class="section fleet">
+        <div class="fleet-header fade-element">
             <div class="fleet-title">
-                <span class="section-subtitle">NOSSA FROTA</span>
-                <h2>VEÍCULOS PARA<br><span class="text-blue">CADA OPERAÇÃO</span></h2>
+                <span class="section-subtitle">Nossa frota</span>
+                <h2>VEÍCULOS PARA<br><span class="text-accent">CADA OPERAÇÃO</span></h2>
+                <p>Selecione um veículo para conhecer a aplicação e solicitar uma proposta.</p>
             </div>
-            <div class="fleet-tabs">
-                <button class="tab-btn active" data-target="toco">Caminhão Toco</button>
-                <button class="tab-btn" data-target="truck">Caminhão Truck</button>
-                <button class="tab-btn" data-target="bitrem">Carreta Bitrem</button>
+            <div class="fleet-tabs" role="tablist" aria-label="Categorias da frota">
+                <button class="tab-btn active" type="button" data-target="toco1">Toco</button>
+                <button class="tab-btn" type="button" data-target="toco2">Toco</button>
+                <button class="tab-btn" type="button" data-target="pipa1">Pipa</button>
+                <button class="tab-btn" type="button" data-target="pipa2">Pipa</button>
+                <button class="tab-btn" type="button" data-target="bau">Baú</button>
+                <button class="tab-btn" type="button" data-target="sider">Sider</button>
+                <button class="tab-btn" type="button" data-target="bitruck">Bitruck</button>
             </div>
         </div>
-        <div class="fleet-content">
-            <!-- ABA TOCO -->
-            <div class="tab-pane active" id="tab-toco">
-                <div class="fleet-main-image" style="background-image: url('assets/caminhao-toco.jpg');">
-                    <div class="fleet-info">
-                        <h3>Caminhão Toco</h3>
-                        <p>Ideal para entregas urbanas e rotas de curta distância.</p>
-                    </div>
-                    <div class="fleet-capacity">
-                        <strong>6 toneladas</strong>
-                        <span>Capacidade de carga</span>
-                    </div>
-                </div>
-            </div>
-            <!-- ABA TRUCK -->
-            <div class="tab-pane" id="tab-truck">
-                <div class="fleet-main-image" style="background-image: url('assets/caminhao-truck.jpg');">
-                    <div class="fleet-info">
-                        <h3>Caminhão Truck</h3>
-                        <p>Versátil e potente para cargas médias em todo o Brasil.</p>
-                    </div>
-                    <div class="fleet-capacity">
-                        <strong>14 toneladas</strong>
-                        <span>Capacidade de carga</span>
-                    </div>
-                </div>
-            </div>
-            <!-- ABA BITREM -->
-            <div class="tab-pane" id="tab-bitrem">
-                <div class="fleet-main-image" style="background-image: url('assets/carreta-bitrem.jpg');">
-                    <div class="fleet-info">
-                        <h3>Carreta Bitrem</h3>
-                        <p>Máxima capacidade para grandes volumes e longas distâncias.</p>
-                    </div>
-                    <div class="fleet-capacity">
-                        <strong>45 toneladas</strong>
-                        <span>Capacidade de carga</span>
-                    </div>
+
+        <div class="fleet-content fade-element">
+            <!-- Caminhão Toco 1 -->
+            <div class="tab-pane active" id="tab-toco1">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-toco.jpg');">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Toco</h3><p>Ideal para entregas urbanas e rotas de curta e média distância.</p></div>
                 </div>
             </div>
             
-            <!-- MINIATURAS DA FROTA -->
+            <!-- Caminhão Toco 2 -->
+            <div class="tab-pane" id="tab-toco2">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-toco2.jpg');">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Toco</h3><p>Ideal para entregas urbanas e rotas de curta e média distância.</p></div>
+                </div>
+            </div>    
+            
+            <!-- Caminhão Pipa 1 -->
+            <div class="tab-pane" id="tab-pipa1">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-pipa.jpg');">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Pipa</h3><p>Indicado para transporte e distribuição de água em obras, empresas e diferentes tipos de operações.</p></div>
+                </div>
+            </div>
+
+            <!-- Caminhão Pipa 2 -->
+            <div class="tab-pane" id="tab-pipa2">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-pipa2.jpg'); background-position: center 80%;">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Pipa</h3><p>Indicado para transporte e distribuição de água em obras, empresas e diferentes tipos de operações.</p></div>
+                </div>
+            </div>
+
+            <!-- Caminhão Baú -->
+            <div class="tab-pane" id="tab-bau">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-bau.jpg'); background-position: center 35%;">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Baú</h3><p>Versátil para transporte de cargas diversas, oferecendo proteção e segurança durante todo o trajeto.</p></div>
+                </div>
+            </div>
+
+            <!-- Caminhão Sider -->
+            <div class="tab-pane" id="tab-sider">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-sider.jpg');">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Sider</h3><p>Ideal para transporte de cargas paletizadas e mercadorias que exigem praticidade e agilidade nas operações.</p></div>
+                </div>
+            </div>
+
+            <!-- Caminhão Bitruck -->
+            <div class="tab-pane" id="tab-bitruck">
+                <div class="fleet-main-image" style="background-image:url('assets/caminhao-bitruck.jpeg');">
+                    <div class="fleet-info"><span>Frota JF</span><h3>Caminhão Bitruck</h3><p>Ideal para transporte de cargas de médio e grande porte, oferecendo maior capacidade de carga, estabilidade e eficiência para operações que exigem robustez e versatilidade.</p></div>
+                </div>
+            </div>
+
             <div class="fleet-thumbs">
-                <div class="thumb-item active" data-index="0">
-                    <img src="assets/caminhao-toco.jpg" alt="Caminhão Toco">
-                </div>
-                <div class="thumb-item" data-index="1">
-                    <img src="assets/caminhao-truck.jpg" alt="Caminhão Truck">
-                </div>
-                <div class="thumb-item" data-index="2">
-                    <img src="assets/carreta-bitrem.jpg" alt="Carreta Bitrem">
-                </div>
+                <button class="thumb-item active" type="button" data-index="0" aria-label="Selecionar caminhão Toco"><img src="assets/caminhao-toco.jpg" alt="Caminhão Toco"></button>
+                <button class="thumb-item" type="button" data-index="1" aria-label="Selecionar caminhão Toco"><img src="assets/caminhao-toco2.jpg" alt="Caminhão Toco"></button>
+                <button class="thumb-item" type="button" data-index="2" aria-label="Selecionar caminhão Pipa"><img src="assets/caminhao-pipa.jpg" alt="Caminhão Pipa"></button>
+                <button class="thumb-item" type="button" data-index="3" aria-label="Selecionar caminhão Pipa"><img src="assets/caminhao-pipa2.jpg" alt="Caminhão Pipa"></button>
+                <button class="thumb-item" type="button" data-index="4" aria-label="Selecionar caminhão Bau"><img src="assets/caminhao-bau.jpg" alt="Caminhão Baú"></button>
+                <button class="thumb-item" type="button" data-index="5" aria-label="Selecionar caminhão Sider"><img src="assets/caminhao-sider.jpg" alt="Caminhão Sider"></button>
+                <button class="thumb-item" type="button" data-index="6" aria-label="Selecionar caminhão Bitruck"><img src="assets/caminhao-bitruck.jpeg" alt="Caminhão Bitruck"></button>
             </div>
+
+            <a href="#contato" class="btn btn-primary fleet-cta" id="fleet-interest">TENHO INTERESSE NESTE VEÍCULO</a>
         </div>
     </section>
 
-    <!-- SEÇÃO SOBRE (COMO FUNCIONA / COBERTURA) -->
+    <!-- [SEGMENTOS] -->
+    <section class="section segments">
+        <div class="section-header centered fade-element">
+            <span class="section-subtitle">Para quem trabalhamos</span>
+            <h2>SOLUÇÕES PARA <span class="text-accent">DIFERENTES OPERAÇÕES</span></h2>
+        </div>
+        <div class="segment-grid fade-element">
+            <div><i class="fa-solid fa-industry"></i><h3>Indústria</h3><p>Movimentação de insumos, produtos e cargas.</p></div>
+            <div><i class="fa-solid fa-cart-shopping"></i><h3>Varejo</h3><p>Distribuição e abastecimento de operações.</p></div>
+            <div><i class="fa-solid fa-map-location-dot"></i><h3>Distribuição</h3><p>Rotas urbanas, regionais e de longa distância.</p></div>
+        </div>
+    </section>
+
+    <!-- [SOBRE / PROCESSO] -->
     <section id="sobre" class="about">
-        <div class="process-container">
-            <span class="section-subtitle text-center">COMO FUNCIONA</span>
-            <h2 class="text-center">DO ORÇAMENTO À<br><span class="text-blue">ENTREGA</span>, SEM COMPLICAÇÃO</h2>
-            
+        <div class="section process-container fade-element">
+            <div class="section-header centered">
+                <span class="section-subtitle">Como funciona</span>
+                <h2>DO ORÇAMENTO À <span class="text-accent">OPERAÇÃO</span></h2>
+                <p>Um processo simples para entender sua necessidade e apresentar a solução adequada.</p>
+            </div>
             <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h4>Solicite um Orçamento</h4>
-                    <p>Preencha o formulário ou ligue. Nossa equipe responde em até 2 horas.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h4>Escolha a Solução</h4>
-                    <p>Apresentamos as melhores opções de frota ou transporte para o seu perfil.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h4>Assine o Contrato</h4>
-                    <p>Contrato digital seguro, sem burocracia, com termos claros e flexíveis.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <h4>Operação Iniciada</h4>
-                    <p>Caminhões na pista e equipe de suporte com monitoramento todo dia.</p>
-                </div>
+                <div class="step"><span class="step-number">01</span><h4>Entre em contato</h4><p>Conte o que sua operação precisa.</p></div>
+                <div class="step"><span class="step-number">02</span><h4>Receba a proposta</h4><p>Nossa equipe avalia as informações e apresenta uma solução.</p></div>
+                <div class="step"><span class="step-number">03</span><h4>Formalize</h4><p>Alinhe condições e avance com a contratação.</p></div>
+                <div class="step"><span class="step-number">04</span><h4>Inicie a operação</h4><p>Com a contratação concluída, sua operação entra em andamento.</p></div>
             </div>
         </div>
-
-        <!-- BANNER DE COBERTURA -->
-        <div class="coverage-banner">
-            <h2>COBERTURA EM 4 REGIÕES DO BRASIL</h2>
-            <p>São Paulo, Rio de Janeiro, Minas Gerais, Nordeste e Sul.</p>
+        <div class="coverage-banner fade-element">
+            <div><span class="section-subtitle">Atuação</span><h2>UMA EQUIPE PREPARADA<br>PARA <span class="text-accent">SUA ROTA</span></h2><p>Consulte nossa equipe sobre disponibilidade, rotas e cobertura para sua necessidade.</p></div>
         </div>
     </section>
 
-    <!-- SEÇÃO CONTATO -->
-    <section id="contato" class="contact">
-        <div class="contact-wrapper">
+    <!-- [CONTATO E FORMULÁRIO] -->
+    <section id="contato" class="section contact">
+        <div class="contact-wrapper fade-element">
             <div class="contact-info">
-                <span class="section-subtitle">FALE CONOSCO</span>
-                <h2>VAMOS MOVER<br><span class="text-blue">SUA CARGA</span></h2>
-                <p>Entre em contato para mais informações</p>
-                
+                <span class="section-subtitle">Fale conosco</span>
+                <h2>VAMOS MOVER<br><span class="text-accent">SUA CARGA</span></h2>
+                <p>Preencha os dados ao lado. Quanto mais informações você enviar, mais fácil será preparar o atendimento.</p>
+
                 <ul class="contact-list">
-                    <li>
-                        <strong>📞 Telefone / WhatsApp</strong>
-                        (19) 3652-5075 / (11) 99364-8272
-                    </li>
-                    <li>
-                        <strong>📧 E-mail comercial</strong>
-                        jf-locacoes@uol.com.br
-                    </li>
-                    <li>
-                        <strong>📍 Endereço</strong>
-                        R. Beatriz Coimbra Alonso, Nº 195 - JD. Bela Vista - Aguaí - SP
-                    </li>
-                    <li>
-                        <strong>⏱️ Atendimento</strong>
-                        Seg–Sex 7h–20h · Sáb 8h–14h
-                    </li>
+                    <li><strong><i class="fa-solid fa-phone"></i> Telefone / WhatsApp</strong><a href="tel:+551936525075">(19) 3652-5075</a> <a href="https://wa.me/5511993648272" target="_blank" rel="noopener">(11) 99364-8272</a></li>
+                    <li><strong><i class="fa-solid fa-envelope"></i> E-mail comercial</strong><a href="mailto:jf-locacoes@uol.com.br">jf-locacoes@uol.com.br</a></li>
+                    <li><strong><i class="fa-solid fa-location-dot"></i> Endereço</strong>R. Beatriz Coimbra Alonso, Nº 195 - JD. Bela Vista - Aguaí - SP</li>
                 </ul>
+
+                <a class="whatsapp-box" href="https://wa.me/5511993648272?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+                    <span>WhatsApp</span><strong>Falar com a equipe →</strong>
+                </a>
             </div>
-            
+
             <div class="contact-form-container">
-                <h3>Solicitar Orçamento</h3>
+                <div class="form-heading"><span>Orçamento</span><h3>Conte o que você precisa</h3><p>Os dados serão usados para direcionar seu atendimento.</p></div>
                 <form id="form-contato">
                     <div class="form-row">
-                        <div class="form-group">
-                            <label>Nome completo</label>
-                            <input type="text" name="nome" placeholder="João Silva" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Empresa</label>
-                            <input type="text" name="empresa" placeholder="Nome da empresa">
-                        </div>
+                        <div class="form-group"><label for="nome">Nome completo</label><input id="nome" type="text" name="nome" placeholder="Seu nome" required></div>
+                        <div class="form-group"><label for="empresa">Empresa</label><input id="empresa" type="text" name="empresa" placeholder="Nome da empresa"></div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <label>Telefone / WhatsApp</label>
-                            <input type="text" name="telefone" placeholder="(11) 99999-0000" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Tipo de serviço</label>
-                            <select name="servico" required>
-                                <option value="">Selecione...</option>
-                                <option value="locacao">Locação de Caminhões</option>
-                                <option value="transporte">Transporte de Cargas</option>
-                            </select>
-                        </div>
+                        <div class="form-group"><label for="telefone">Telefone / WhatsApp</label><input id="telefone" type="tel" name="telefone" placeholder="(11) 99999-0000" required></div>
+                        <div class="form-group"><label for="email">E-mail</label><input id="email" type="email" name="email" placeholder="seu@email.com"></div>
                     </div>
-                    <div class="form-group">
-                        <label>Mensagem</label>
-                        <textarea name="mensagem" rows="4" placeholder="Descreva sua necessidade, origem e destino, volume de carga..." required></textarea>
+                    <div class="form-row">
+                        <div class="form-group"><label for="servico">Tipo de serviço</label><select id="servico" name="servico" required><option value="">Selecione...</option><option>Locação de Caminhões</option><option>Transporte de Cargas</option></select></div>
+                        <div class="form-group"><label for="veiculo">Tipo de veículo</label><select id="veiculo" name="veiculo"><option value="">Ainda não sei</option><option>Caminhão Toco</option><option>Caminhão Pipa</option><option>Caminhão Baú</option><option>Caminhão Sider</option><option>Caminhão Bitruck</option></select></div>
                     </div>
+                    <div class="form-row">
+                        <div class="form-group"><label for="origem">Origem</label><input id="origem" type="text" name="origem" placeholder="Cidade / UF"></div>
+                        <div class="form-group"><label for="destino">Destino</label><input id="destino" type="text" name="destino" placeholder="Cidade / UF"></div>
+                    </div>
+                    <div class="form-group"><label for="periodo">Período / frequência</label><input id="periodo" type="text" name="periodo" placeholder="Ex.: diária, mensal, operação única..."></div>
+                    <div class="form-group"><label for="mensagem">Detalhes da operação</label><textarea id="mensagem" name="mensagem" rows="4" placeholder="Fale sobre carga, quantidade, prazo ou qualquer detalhe importante." required></textarea></div>
                     <button type="submit" class="btn btn-primary btn-full">ENVIAR SOLICITAÇÃO</button>
-                    <div id="form-mensagem"></div>
+                    <div id="form-mensagem" role="status" aria-live="polite"></div>
                 </form>
             </div>
         </div>
     </section>
+</main>
 
-    <!-- RODAPÉ -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <div class="logo">
-                    <span class="logo-icon">JF</span>
-                    <span class="logo-text">LOCAÇÕES E TRANSPORTES</span>
-                </div>
-                <p>Desde 2006 movendo o Brasil com segurança, pontualidade e tecnologia de ponta em logística e transporte.</p>
-            </div>
-            <div class="footer-links">
-                <h4>SERVIÇOS</h4>
-                <ul>
-                    <li><a href="#servicos">Locação de Caminhões</a></li>
-                    <li><a href="#servicos">Transporte de Cargas</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>EMPRESA</h4>
-                <ul>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#frota">Nossa Frota</a></li>
-                </ul>
-            </div>
+<!-- [RODAPÉ] -->
+<footer>
+    <div class="footer-grid fade-element">
+        <div class="footer-brand">
+            <a class="logo" href="#inicio"><img class="logo-img" src="assets/logo-jf.png" alt="JF"><span class="logo-text">LOCAÇÕES <b>&</b> TRANSPORTES</span></a>
+            <p>Locação de caminhões, transporte de cargas e soluções logísticas para empresas.</p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 JF Locações e Transportes LTDA - CNPJ NÃO ESQUECER DE ALTERAR · Todos os direitos reservados.</p>
-            <div class="legal-links">
-                <a href="#">Termos de Uso</a>
-                <a href="#">Privacidade</a>
-                <a href="#">LGPD</a>
-            </div>
-        </div>
-    </footer>
+        <div class="footer-links"><h4>SERVIÇOS</h4><a href="#servicos">Locação de Caminhões</a><a href="#servicos">Transporte de Cargas</a></div>
+        <div class="footer-links"><h4>EMPRESA</h4><a href="#sobre">Como funciona</a><a href="#frota">Nossa Frota</a><a href="#contato">Contato</a></div>
+        <div class="footer-links"><h4>CONTATO</h4><a href="mailto:jf-locacoes@uol.com.br">jf-locacoes@uol.com.br</a><a href="https://wa.me/5511993648272" target="_blank" rel="noopener">WhatsApp</a><span>Aguaí - SP</span></div>
+    </div>
+<div class="footer-bottom">
+    <p>
+        © 2026 JF Locações e Transportes LTDA · CNPJ: 10.813.846/0001-02 · Todos os direitos reservados.
+    </p>
 
-    <script src="js/main.js"></script>
+    <p>
+        Desenvolvido por
+        <a href="https://github.com/gustavohenriquet" target="_blank" rel="noopener noreferrer">
+            Gustavo Henrique
+        </a>
+    </p>
+
+    <div class="legal-links">
+        <a href="/termos-de-uso.html">Termos de Uso</a>
+        <a href="/privacidade.html">Privacidade</a>
+        <a href="/lgpd.html">LGPD</a>
+    </div>
+</div>
+</footer>
+
+<!-- [BOTÃO FLUTUANTE DO WHATSAPP] -->
+<a class="floating-whatsapp" href="https://wa.me/5511993648272?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a JF pelo WhatsApp">
+    <span>WhatsApp</span><strong>Falar com a equipe</strong>
+</a>
+
+<script src="js/main.js"></script>
 </body>
 </html>

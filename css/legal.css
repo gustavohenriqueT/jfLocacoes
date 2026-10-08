@@ -1,0 +1,37 @@
+/* Páginas legais — mesmo sistema do site */
+:root { --asphalt:#17181a; --mist:#eceeef; --yellow:#ffc000; --body:'Barlow',system-ui,sans-serif; --display:'Barlow Condensed','Arial Narrow',sans-serif; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--body); font-size:18px; background:var(--mist); color:var(--asphalt); line-height:1.65; }
+
+header { background:var(--asphalt); height:68px; padding:0 5%; display:flex; align-items:center; }
+.header-container { width:100%; max-width:1000px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+.logo { color:#fff; font-family:var(--display); font-weight:600; font-size:24px; text-transform:uppercase; letter-spacing:.04em; text-decoration:none; }
+.logo span { color:var(--yellow); }
+.back-link { color:#e4e6e8; text-decoration:none; font-weight:500; font-size:17px; border-bottom:2px solid transparent; }
+.back-link:hover { border-bottom-color:var(--yellow); }
+
+main { max-width:900px; margin:64px auto 0; padding:0 20px; }
+.content { background:#fff; padding:56px; }
+h1, h2 { font-family:var(--display); font-weight:600; color:var(--asphalt); }
+h1 { font-size:clamp(3rem,8vw,5rem); line-height:.92; text-transform:uppercase; margin-bottom:12px; }
+h2 { font-size:30px; line-height:1.1; margin:40px 0 10px; }
+.updated { color:#555a60; font-size:16px; margin-bottom:36px; }
+p { margin-bottom:16px; color:#33373b; }
+ul { margin:10px 0 24px 24px; color:#33373b; }
+li { margin-bottom:8px; }
+a { color:var(--asphalt); text-underline-offset:3px; text-decoration-color:#aeb3b8; }
+a:hover { text-decoration-color:var(--asphalt); }
+.highlight { background:var(--mist); border-left:5px solid var(--yellow); padding:22px 24px; margin:32px 0; }
+.highlight p { margin:0; }
+
+footer { background:var(--asphalt); color:#b9bdc1; text-align:center; padding:36px 20px; margin-top:64px; font-size:16px; }
+.footer-links { margin-top:12px; }
+.footer-links a { color:#e4e6e8; text-decoration:none; margin:0 12px; }
+.footer-links a:hover { color:var(--yellow); }
+
+:focus-visible { outline:3px solid var(--yellow); outline-offset:3px; }
+
+@media (max-width:600px) {
+  .content { padding:32px 22px; }
+  h2 { font-size:26px; }
+}
